@@ -6,6 +6,12 @@
         <!-- icones sur Fontawesome-->
         <script src="https://kit.fontawesome.com/9963f5c562.js" crossorigin="anonymous"></script>
         <title>ohmyfood</title>
+
+        <!-- Police d'écriture Shrikhand et Roboto-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+
     </head>
 
     <body>
@@ -17,16 +23,12 @@
 
 
         <main>
-
             <!-- Zone d'article-->
             <article ID="ar">
-                <form class="ar1">
-                    <label><i class="fa-solid fa-location-dot"></i></label>
-                    <input name="recherche">
-                </form>
+                <h3 class="ar1"><i class="fa-solid fa-location-dot ar1--i"></i>Paris, Belleville</h3>
                 <h1 class="ar2">Réservez le menu qui vous convient</h1>
-                <p class="ar3">Découvrez des restaurants d'exeption, séléctionnés par nos soins</p>
-                <a class="ar4" href="#section">Explorer nos restaurants</a>
+                <p class="ar3">Découvrez des restaurants d'exeption, séléctionnés par nos soins.</p>
+                <a class="btn1" href="#section">Explorer nos restaurants</a>
             </article>
 
             <!-- Zone de navigation-->
@@ -105,3 +107,51 @@
         </footer>
     </body>
 </html>
+
+
+<!--
+
+    Généralités
+- Logo et titres: Shrikhand
+- Texte: Roboto
+- Violet : #9356DC ; rose : #FF79DA ; vert : #99E2D0
+- Aucun framework, utilisation de SASS 
+- Aucun code CSS dans une balise HTML
+- versionné sur GitHub, accessible sur Github Pages
+- mobile-first
+- tablette et desktop, adapter, libre
+- compatible avec Chrome et Firefox sur desktop
+
+    Header
+        
+présent sur toutes les pages:
+- page d’accueil, logo du site,
+- pages de menu, bouton de retour vers la page d’accueil en +
+
+    Boutons
+
+- Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir
+- L’ombre portée devra également être plus visible
+bouton "J’aime":
+- en forme de cœur, Au clic, se remplit progressivement
+- l’effet apparaît au survol sur desktop
+
+    Page d’accueil
+
+“loading spinner”:
+- apparaît pendant 1 à 3 secondes quand on arrive sur la page d'accueil, couvre l'intégralité de l'écran
+- design de ce loader au choix et cohérente.
+
+    Pages de menu
+- les plats devront apparaître progressivement avec un léger décalage dans le temps. apparaît un par un ou par groupe “Entrée”, “Plat” et “Dessert”
+- ajout de plats à la commande en cliquant dessus :
+- apparition d'une petite coche à droite du plat validé.coulisse de droite a gauche.
+- l’effet apparaît au survol sur desktop
+- nom de plat trop long = rogné avec des points de suspension
+
+    Footer 
+        
+- identique sur toutes les pages
+- “Contact” renvoi vers une adresse mail.
+
+-->
