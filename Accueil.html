@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
+
         <!-- icones sur Fontawesome-->
         <script src="https://kit.fontawesome.com/9963f5c562.js" crossorigin="anonymous"></script>
         <title>ohmyfood</title>
@@ -10,84 +11,86 @@
         <!-- Police d'écriture Shrikhand et Roboto-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&family=Shrikhand&display=swap" rel="stylesheet">
 
     </head>
 
     <body>
+        <!--loading spinner-->
+        <div class="load-1">
+            <div class=" load-1-1"></div>
+        </div>
 
         <!-- Zone de titre-->
-        <header>
+        <header class="page">
             <img src="images/logo/ohmyfood.png" alt="Logo" class="ti1"/>
         </header>
 
 
-        <main>
+        <main class="page">
             <!-- Zone d'article-->
             <article ID="ar">
-                <h3 class="ar1"><i class="fa-solid fa-location-dot ar1--i"></i>Paris, Belleville</h3>
-                <h1 class="ar2">Réservez le menu qui vous convient</h1>
+                <p class="ar1"><i class="fa-solid fa-location-dot ar1--i"></i>Paris, Belleville</p>
+                <p class="ar2">Réservez le menu qui vous convient</p>
                 <p class="ar3">Découvrez des restaurants d'exeption, séléctionnés par nos soins.</p>
                 <a class="btn1" href="#section">Explorer nos restaurants</a>
             </article>
 
             <!-- Zone de navigation-->
             <nav ID="nav">
-                <h1 class="nav1">Fonctionnement</h1>
-                <div class="nav2">
-                    <span>1</span>
-                    <a href="#"><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</a>
+                <p class="nav1">Fonctionnement</p>
+                <div class="nav">
+                    <span class="nav--s">1</span>
+                    <a href="#" class="nav--a"><i class="fa-solid fa-mobile-screen-button nav--i--1"></i>Choisissez un restaurant</a>
                 </div>
-                <div class="nav3">
-                    <span>2</span>
-                    <a href="#" class="nav3"><i class="fa-solid fa-list"></i>Composez votre menu</a>
+                <div class="nav">
+                    <span class="nav--s">2</span>
+                    <a href="#" class="nav--a"><i class="fa-solid fa-list nav--i"></i>Composez votre menu</a>
                 </div>
-                <div class="nav4">
-                    <span>3</span>
-                    <a href="#" class="nav4"><i class="fa-solid fa-store"></i>Dégustez au restaurant</a>
+                <div class="nav">
+                    <span class="nav--s">3</span>
+                    <a href="#" class="nav--a"><i class="fa-solid fa-store nav--i"></i>Dégustez au restaurant</a>
                 </div>
             </nav>
 
             <section ID="section">
-                <h1 class="se1">Restaurants</h1>
+                <h1 class="se--h1">Restaurants</h1>
 
-                <div class="se1">
-                    <a href="#">
-                        <em>Nouveau</em>
-                        <img src="images/restaurants/Ménilmontant.jpg" alt="Restaurant1"/>
-                        <h2>La palette du goût</h2>
-                        <b>Ménilmontant</b>
-                        <i class="fa-solid fa-heart"></i>
+                <div class="se">
+                    <a href="#" class="se--a">
+                        <img src="images/restaurants/Ménilmontant.jpg" alt="Restaurant1" class="se--a--img"/>
+                        <em class="se--a--em">Nouveau</em>
+                        <h2 class="se--a--h2--e">La palette du goût</h2>
+                        <p class="se--a--p">Ménilmontant</p>
+                        <i class="fa-solid fa-heart se--a--i"></i>
                     </a>
                 </div>
 
-                <div class="se2">
-                    <a href="#">
-                        <em>Nouveau</em>
-                        <img src="images/restaurants/Charonne.jpg" alt="Restaurant2"/>
-                        <h2>La note enchantée</h2>
-                        <b>Charonne</b>
-                        <i class="fa-solid fa-heart"></i>
+                <div class="se">
+                    <a href="#" class="se--a">
+                        <img src="images/restaurants/Charonne.jpg" alt="Restaurant2" class="se--a--img"/>
+                        <em class="se--a--em">Nouveau</em>
+                        <h2 class="se--a--h2--e">La note enchantée</h2>
+                        <p class="se--a--p">Charonne</p>
+                        <i class="fa-solid fa-heart se--a--i"></i>
                     </a>
                 </div>
 
-                <div class="se3">
-                    <a href="#">
-                        <em>Nouveau</em>
-                        <img src="images/restaurants/Cité Rouge.jpg" alt="Restaurant3"/>
-                        <h2>A la française</h2>
-                        <b>cité rouge</b>
-                        <i class="fa-solid fa-heart"></i>
+                <div class="se">
+                    <a href="#" class="se--a">
+                        <img src="images/restaurants/Cité Rouge.jpg" alt="Restaurant3" class="se--a--img"/>
+                        <h2 class="se--a--h2">A la française</h2>
+                        <p class="se--a--p">cité rouge</p>
+                        <i class="fa-solid fa-heart se--a--i"></i>
                     </a>
                 </div>
 
-                <div class="se4">
-                    <a href="#">
-                        <em>Nouveau</em>
-                        <img src="images/restaurants/Folie-Méricourt.jpg" alt="Restaurant4"/>
-                        <h2>Le délice des sens</h2>
-                        <b>Folie-Méricourt</b>
-                        <i class="fa-solid fa-heart"></i>
+                <div class="se">
+                    <a href="#" class="se--a">
+                        <img src="images/restaurants/Folie-Méricourt.jpg" alt="Restaurant4" class="se--a--img"/>
+                        <h2 class="se--a--h2">Le délice des sens</h2>
+                        <p class="se--a--p">Folie-Méricourt</p>
+                        <i class="fa-solid fa-heart se--a--i"></i>
                     </a>
                 </div>
 
@@ -96,7 +99,7 @@
         </main>
 
         <!-- Zone du footer-->
-        <footer>
+        <footer class="page">
             <div class="fo1">
                 <img src="images/logo/ohmyfood.png" alt="Logo"/>
             </div>
