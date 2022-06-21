@@ -33,6 +33,9 @@ a {
   color: black;
   text-decoration: none;
 }
+a:hover {
+  box-shadow: 0px 30px 60px #d0d0d0;
+}
 
 body {
   margin: 0%;
@@ -68,15 +71,18 @@ header {
 
 article {
   background-color: #f6f6f6;
-  display: flex;
-  flex-direction: column;
   align-items: center;
+}
+@media screen and (max-width: 990px) {
+  article {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .ar1 {
   padding-top: 4%;
   padding-bottom: 4%;
-  padding-Right: 1%;
   width: 100%;
   background-color: #eaeaea;
   margin: 0%;
@@ -116,11 +122,19 @@ article {
   color: white;
   box-shadow: 0px 15px 30px #d0d0d0;
 }
+.btn1:hover {
+  background: #ae80e5;
+  background: #fface8;
+}
 
 nav {
-  display: flex;
-  flex-direction: column;
   margin: 7%;
+}
+@media screen and (max-width: 990px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .nav1 {
@@ -142,6 +156,13 @@ nav {
   white-space: nowrap;
   box-shadow: 0px 15px 30px #d0d0d0;
 }
+.nav:hover {
+  background-color: #e4d5f6;
+  opacity: 0.7;
+}
+.nav:hover i {
+  color: #9356DC;
+}
 .nav--s {
   background-color: #9356DC;
   color: white;
@@ -150,9 +171,6 @@ nav {
   font-weight: 100;
   padding: 7px 20px;
   margin-left: -20px;
-}
-.nav--a {
-  margin: 1%;
 }
 .nav--i {
   margin: 0px 45px;
@@ -164,16 +182,23 @@ nav {
 #section {
   background-color: #f6f6f6;
   padding: 7%;
-  display: flex;
-  flex-direction: column;
+}
+@media screen and (max-width: 990px) {
+  #section {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-.se {
-  margin: 2%;
+section a {
   background-color: white;
+}
+
+.se--a {
+  margin: 2%;
   border-radius: 50px;
 }
-.se--h1 {
+.se--a--h1 {
   font-weight: 700;
   font-size: 3em;
   text-align: center;
@@ -212,14 +237,43 @@ nav {
   margin-left: 5%;
 }
 .se--a--i {
-  position: relative;
-  font-size: 4em;
-  color: white;
-  left: 80%;
-  bottom: 90px;
   margin: 0px;
   padding: 0px;
-  outline: 1px solid black;
+  position: relative;
+  font-size: 4em;
+  left: 90%;
+  bottom: 95px;
+  color: #FFF;
+  background-color: #000;
+  border-radius: 50%;
+}
+.se--a--i:hover {
+  animation: heart 3s;
+  animation-fill-mode: both;
+}
+@keyframes hear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+footer {
+  color: white;
+  background-color: black;
+  padding: 20px;
+  font-size: 2em;
+}
+footer i {
+  padding-right: 2%;
+}
+
+.fo1 {
+  font-family: "Shrikhand";
+  font-size: 1em;
+  margin: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */

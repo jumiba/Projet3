@@ -5,12 +5,22 @@ $color-4: #eaeaea;
 $color-5: #f6f6f6;
 
 $box-shadow: 0px 15px 30px #d0d0d0;
+$box-shadow-h:0px 30px 60px #d0d0d0;
+
+
+@mixin mobile
+{
+    @media screen and (max-width: 990px)
+    {
+    display: flex;
+    flex-direction: column;
+    }
+}
 
 @mixin font-1
 {
     font-family: 'Shrikhand';
-    font-size: 4em;
-    text-align: center;
+    font-size: 1em;
 }
 
 @mixin font-2
@@ -40,12 +50,10 @@ $box-shadow: 0px 15px 30px #d0d0d0;
     background: linear-gradient($color-2, $color-1);
     color: white;
     box-shadow: $box-shadow;
-}
-
-@mixin mobile
-{
-    display: flex;
-    flex-direction: column;
+    &:hover{
+    background: lighten($color-1, 10%);
+    background: lighten($color-2, 10%);
+    }
 }
 
 .load-1
@@ -84,10 +92,15 @@ $box-shadow: 0px 15px 30px #d0d0d0;
     }
 }
 
+
 a
 {
     color: black;
     text-decoration: none;
+    &:hover
+    {
+        box-shadow: $box-shadow-h;
+    }
 }
 
 body
@@ -139,7 +152,6 @@ article
 {
     padding-top: 4%;
     padding-bottom: 4%;
-    padding-Right: 1%;
     width: 100%;
     background-color: $color-4;
     margin: 0%;
@@ -197,6 +209,15 @@ nav
     @include font-3;
     white-space: nowrap;
     box-shadow: $box-shadow;
+    &:hover
+    {
+        background-color: lighten($color-1,30%);
+        opacity: 0.7;
+        & i
+        {
+        color: $color-1;
+        }
+    }
     &--s
     {
         background-color: $color-1;
@@ -206,10 +227,6 @@ nav
         font-weight: 100;
         padding: 7px 20px;
         margin-left: -20px;
-    }
-    &--a
-    {
-        margin: 1%;
     }
     &--i
     {
@@ -225,70 +242,102 @@ nav
 {
     background-color: $color-5;
     padding: 7%;
-    display: flex;
-    flex-direction: column;
+    @include mobile;
 }
 
-.se
+section a
+{
+    background-color: white;
+}
+.se--a
 {
     margin: 2%;
-    background-color: white;
     border-radius:50px;
     &--h1
     {
         @include font-2;
         text-align: left;
     }
-    &--a
+    &--img
     {
-        &--img
-        {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            border-radius:50px 50px 00px 0px;
-        }
-        &--em
-        {
-            background-color: $color-3;
-            color: darken($color-3,20%);
-            font-weight: bold;
-            font-size: 1.5em;
-            position: relative;
-            padding: 15px;
-            border-radius: 5px;
-            left: 70%;
-            bottom: 370px;
-        }
-        &--h2
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius:50px 50px 00px 0px;
+    }
+    &--em
+    {
+        background-color: $color-3;
+        color: darken($color-3,20%);
+        font-weight: bold;
+        font-size: 1.5em;
+        position: relative;
+        padding: 15px;
+        border-radius: 5px;
+        left: 70%;
+        bottom: 370px;
+    }
+    &--h2
+    {
+        font-size: 3em;
+        margin: 2px;
+        margin-left: 5%;
+        &--e
         {
             font-size: 3em;
             margin: 2px;
             margin-left: 5%;
-            &--e
-            {
-                font-size: 3em;
-                margin: 2px;
-                margin-left: 5%;
-                margin-top: -30px;
+            margin-top: -30px;
+        }
+    }
+    &--p
+    {
+        margin: 0%;
+        margin-left: 5%;
+    }
+    &--i
+    {
+        margin:0px;
+        padding:0px;
+        position: relative;
+        font-size: 4em;
+        left: 90%;
+        bottom: 95px;
+        color: #FFF;
+        background-color: #000;
+        border-radius: 50%;
+        &:hover
+        {
+            animation: heart 3s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes hear
+        {
+            0%{
+            opacity: 0;
             }
-        }
-        &--p
-        {
-            margin: 0%;
-            margin-left: 5%;
-        }
-        &--i
-        {
-            position: relative;
-            font-size: 4em;
-            color: white;
-            left: 80%;
-            bottom: 90px;
-            margin: 0px;
-            padding: 0px;
-            outline: 1px solid black;
-        }
+            100% {
+            opacity: 1;
+            }
+        }  
     }
 }
 
+footer
+{
+    color: white;
+    background-color: black;
+    padding: 20px;
+    font-size: 2em;
+    & i
+    {
+        padding-right: 2%;
+    }
+}
+
+.fo1
+{
+    @include font-1;
+    margin: 2px;
+}
