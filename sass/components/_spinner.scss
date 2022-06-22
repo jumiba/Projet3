@@ -1,0 +1,54 @@
+.load
+{
+    display:flex;
+    &-d
+    {
+        margin:40%;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        border: 3px solid $color-1;
+        border-top: hidden;
+        animation: spinner ease-in-out 750ms;
+        animation-iteration-count: 3;
+        position: absolute;
+        align-items: center;
+        opacity: 0;
+    }
+}
+
+@keyframes spinner
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    0%,10%{
+        opacity: 0;
+    }
+    
+    90%,100% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.page
+{
+    animation: page 3s;
+    animation-fill-mode: both;
+}
+
+@keyframes page
+{
+    0%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

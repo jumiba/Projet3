@@ -1,0 +1,17 @@
+footer
+{
+    color: white;
+    background-color: black;
+    padding: 20px;
+    font-size: 2em;
+    & i
+    {
+        padding-right: 2%;
+    }
+}
+
+.fo1
+{
+    @include font-1;
+    margin: 2px;
+}

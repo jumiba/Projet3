@@ -1,0 +1,15 @@
+a
+{
+    color: black;
+    text-decoration: none;
+    &:hover
+    {
+        box-shadow: $box-shadow-h;
+    }
+}
+
+body
+{
+    margin: 0%;
+    font-family: 'Roboto' black;
+}

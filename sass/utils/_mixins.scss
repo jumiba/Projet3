@@ -1,0 +1,67 @@
+@mixin mobile
+{
+    @media screen and (max-width: 990px)
+    {
+    display: flex;
+    flex-direction: column;
+    }
+}
+
+@mixin font-1
+{
+    font-family: 'Shrikhand';
+    font-size: 1em;
+    @media screen and (min-width: 990px)
+    {
+        font-size: 0.7em;
+    }
+}
+
+@mixin font-2
+{
+    font-weight: 700;
+    font-size: 3em;
+    text-align: center;
+    @media screen and (min-width: 990px)
+    {
+        font-size: 2em;
+    }
+}
+
+@mixin font-3
+{
+    font-weight: 700;
+    font-size: 2.5em;
+    @media screen and (min-width: 990px)
+    {
+        font-size: 1.5em;
+    }
+}
+
+@mixin font-4
+{
+    font-weight: 100;
+    font-size: 2em;
+    text-align: center;
+    @media screen and (min-width: 990px)
+    {
+        font-size: 1.5em;
+    }
+}
+
+@mixin btn-1
+{
+    border-radius: 5em 5em 5em 5em;
+    padding: 3em 6em;
+    background: linear-gradient($color-2, $color-1);
+    color: white;
+    box-shadow: $box-shadow;
+    &:hover{
+    background: lighten($color-1, 10%);
+    background: lighten($color-2, 10%);
+    }
+    @media screen and (min-width: 990px)
+    {
+        font-size: 1em;
+    }
+}
