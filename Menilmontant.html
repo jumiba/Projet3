@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
@@ -10,7 +10,7 @@
         <!-- Police d'écriture Shrikhand et Roboto-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
 
         <title>Ménilmontant</title>
     </head>
@@ -18,32 +18,33 @@
     <body>
 
         <!-- Zone de titre-->
-        <div>
-            <a href="Index.html" class="arrow"><i class="fa-solid fa-arrow-left"></i></a>
-        </div>
-
         <header>
+            <div class="arrow">
+                <a href="Index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            </div>
             <img src="images/logo/ohmyfood.png" alt="Logo" class="titre"/>
         </header>
         
         <main>
-            <Section class="se1">
-                <img src="images/restaurants/Menilmontant.jpg" alt="Restaurant1" class="m--img"/>
+            <Section id="se1">
+                <div class="se1">
+                    <img src="images/restaurants/Menilmontant.jpg" alt="Restaurant1" class="m--img"/>
+                </div>
+                <div class="h4d">
+                    <h4 class="h4">La palette du goût</h4>
+                    <button type="button" class="h4--h">
+                        <span class="h4--h--1">
+                            <i class="fa-regular fa-heart h4--h--h"></i>
+                        </span>
+                        <span class="h4--h--2">
+                            <i class="fa-solid fa-heart h4--h--h"></i>
+                        </span>
+                        <span class="h4--h--3">
+                            <i class="fa-solid fa-heart h4--h--h"></i>
+                        </span>
+                    </button>
+                </div>
             </Section>
-            <div class="h4d">
-                <h4 class="h4">La palette du goût</h4>
-                <button type="button" class="h4--h">
-                    <div class="h4--h--1">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="h4--h--2">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                    <div class="h4--h--3">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                </button>
-            </div>
             
             
             <Section class="se2">
@@ -52,97 +53,98 @@
                 <div class="se2--hb"></div>
 
                 <div class="se2--pla">
-                    <button type="button" class="se2--btn">
-                        <h2 class="se2--btn--h2">Fricassée d'escargot</h2>
-                        <b class="se2--btn--b">Au piment d'espelette</b>
-                        <h3 class="se2--btn--h3">25€</h3>
-                        <div class="se2--btn--cir">
+                    <a href="#" class="se2--btn se2--btn--1">
+                        <p class="se2--btn--h2">Fricassée d'escargot</p>
+                        <p class="se2--btn--b">Au piment d'espelette</p>
+                        <span class="se2--btn--h3">25€</span>
+                        <span class="se2--btn--cir">
                             <i class="fa-solid fa-circle-check se2--btn--i"></i>
-                        </div>
-                    </button>
+                        </span>
+                    </a>
 
-                    <button type="button" class="se2--btn">
-                        <h2 class="se2--btn--h2">Foie gras de canard mi-cuit</h2>
-                        <b class="se2--btn--b">Et ses copeaux de truffe noire</b>
-                        <h3 class="se2--btn--h3">35€</h3>
-                        <div class="se2--btn--cir">
+                    <a href="#" class="se2--btn se2--btn--2">
+                        <p class="se2--btn--h2">Foie gras de canard mi-cuit</p>
+                        <p class="se2--btn--b">Et ses copeaux de truffe noire</p>
+                        <span class="se2--btn--h3">35€</span>
+                        <span class="se2--btn--cir">
                             <i class="fa-solid fa-circle-check se2--btn--i"></i>
-                        </div>
-                    </button>
+                        </span>
+                    </a>
 
-                    <button type="button" class="se2--btn">
-                        <h2 class="se2--btn--h2">Oeuf au plat</h2>
-                        <b class="se2--btn--b">Assaisonné à la truffe sur lit de</b>
-                        <h3 class="se2--btn--h3">20€</h3>
-                        <div class="se2--btn--cir">
+                    <a href="#" class="se2--btn se2--btn--3">
+                        <p class="se2--btn--h2">Oeuf au plat</p>
+                        <p class="se2--btn--b">Assaisonné à la truffe sur lit de</p>
+                        <span class="se2--btn--h3">20€</span>
+                        <span class="se2--btn--cir">
                             <i class="fa-solid fa-circle-check se2--btn--i"></i>
-                        </div>
-                    </button>
+                        </span>
+                    </a>
                 </div>
 
                 <h1 class="se2--h">PLATS</h1>
                 <div class="se2--hb"></div>
 
                 <div class="se2--pla">
-                    <button type="button" class="se2--btn">
-                        <h2 class="se2--btn--h2">Filet de boeuf aux herbes</h2>
-                        <b class="se2--btn--b">Accompagné de sa ribambelle de légu</b>
-                        <h3 class="se2--btn--h3">40€</h3>
-                        <div class="se2--btn--cir">
+                    <a href="#" class="se2--btn se2--btn--1">
+                        <p class="se2--btn--h2">Filet de boeuf aux herbes</p>
+                        <p class="se2--btn--b">Accompagné de sa ribambelle de légu</p>
+                        <span class="se2--btn--h3">40€</span>
+                        <span class="se2--btn--cir">
                             <i class="fa-solid fa-circle-check se2--btn--i"></i>
-                        </div>
-                    </button>
-                    <button type="button" class="se2--btn">
-                        <h2 class="se2--btn--h2">Parmentier de queue de boeuf</h2>
-                        <b class="se2--btn--b">À la truffe noire sur sa purée de panais</b>
-                        <h3 class="se2--btn--h3">35€</h3>
-                        <div class="se2--btn--cir">
+                        </span>
+                    </a>
+                    <a href="#" class="se2--btn se2--btn--2">
+                        <p class="se2--btn--h2">Parmentier de queue de boeuf</p>
+                        <p class="se2--btn--b">À la truffe noire sur sa purée de panais</p>
+                        <span class="se2--btn--h3">35€</span>
+                        <span class="se2--btn--cir">
                             <i class="fa-solid fa-circle-check se2--btn--i"></i>
-                        </div>
-                    </button>
-                    <button type="button" class="se2--btn">
-                        <h2 class="se2--btn--h2">Filet de Turbot</h2>
-                        <b class="se2--btn--b">Aux agrumes</b>
-                        <h3 class="se2--btn--h3">44€</h3>
-                        <div class="se2--btn--cir">
+                        </span>
+                    </a>
+                    <a href="#" class="se2--btn se2--btn--3">
+                        <p class="se2--btn--h2">Filet de Turbot</p>
+                        <p class="se2--btn--b">Aux agrumes</p>
+                        <span class="se2--btn--h3">44€</span>
+                        <span class="se2--btn--cir">
                             <i class="fa-solid fa-circle-check se2--btn--i"></i>
-                        </div>
-                    </button>
+                        </span>
+                    </a>
                 </div>
 
                 <h1 class="se2--h">DESSERTS</h1>
                 <div class="se2--hb"></div>
 
                 <div class="se2--pla">
-                    <button type="button" class="se2--btn">
-                        <h2 class="se2--btn--h2">Paris-Brest </h2>
-                        <b class="se2--btn--b">Revisité</b>
-                        <h3 class="se2--btn--h3">18€</h3>
-                        <div class="se2--btn--cir">
+                    <a href="#" class="se2--btn se2--btn--1">
+                        <p class="se2--btn--h2">Paris-Brest </p>
+                        <p class="se2--btn--b">Revisité</p>
+                        <span class="se2--btn--h3">18€</span>
+                        <span class="se2--btn--cir">
                             <i class="fa-solid fa-circle-check se2--btn--i"></i>
-                        </div>
-                    </button>
-                    <button type="button" class="se2--btn">
-                        <h2 class="se2--btn--h2">Macaron au chocolat d'exception</h2>
-                        <b class="se2--btn--b">Et glace à la vanille de Madagascar </b>
-                        <h3 class="se2--btn--h3">22€</h3>
-                        <div class="se2--btn--cir">
+                        </span>
+                    </a>
+                    <a href="#" class="se2--btn se2--btn--2">
+                        <p class="se2--btn--h2">Macaron au chocolat d'exception</p>
+                        <p class="se2--btn--b">Et glace à la vanille de Madagascar </p>
+                        <span class="se2--btn--h3">22€</span>
+                        <span class="se2--btn--cir">
                             <i class="fa-solid fa-circle-check se2--btn--i"></i>
-                        </div>
-                    </button>
-                    <button type="button" class="se2--btn">
-                        <h2 class="se2--btn--h2">Mousse au chocolat</h2>
-                        <b class="se2--btn--b">Au piment despelette et à la truffe noire</b>
-                        <h3 class="se2--btn--h3">23€</h3>
-                        <div class="se2--btn--cir">
+                        </span>
+                    </a>
+                    <a href="#" class="se2--btn se2--btn--3">
+                        <p class="se2--btn--h2">Mousse au chocolat</p>
+                        <p class="se2--btn--b">Au piment despelette et à la truffe noire</p>
+                        <span class="se2--btn--h3">23€</span>
+                        <span class="se2--btn--cir">
                             <i class="fa-solid fa-circle-check se2--btn--i"></i>
-                        </div>
-                    </button>
+                        </span>
+                    </a>
                 </div>
                 <article class="btn--a">
-                <a class="btn1" href="#section">commander</a>
+                    <div class="btn--a--d"><h6><a class="btn1" href="#section">commander</a></h6></div>
                 </article>
             </Section>
+        </main>
 
         <!-- Zone du footer-->
         <footer class="page">

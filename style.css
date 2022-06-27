@@ -7,14 +7,6 @@ body {
   font-weight: 100;
 }
 
-.arrow {
-  position: absolute;
-  align-items: Left;
-  top: 50px;
-  left: 50px;
-  font-size: 4em;
-}
-
 .m--img {
   width: 100%;
   height: 600px;
@@ -22,29 +14,35 @@ body {
 }
 @media screen and (min-width: 990px) {
   .m--img {
-    position: relative;
-    width: 240px;
-    height: 240px;
-    bottom: 140px;
-    left: 280px;
-    margin: -100px;
+    display: none;
   }
 }
 
 .h4d {
   font-family: "Shrikhand";
   font-size: 4em;
-  margin: 0px;
-  padding: 20px;
+  margin: 0px 0px -200px 0px;
   position: relative;
-  bottom: 100px;
+  bottom: 150px;
   border-radius: 50px 50px 0px 0px;
   background-color: #f6f6f6;
 }
 @media screen and (min-width: 990px) {
   .h4d {
     bottom: 0px;
+    margin: -20px 0px -10px 0px;
+    font-size: 2em;
   }
+}
+
+#se1 {
+  margin: 0%;
+  padding: 0%;
+  background-color: transparent;
+}
+
+.se1 {
+  background-color: white;
 }
 
 .se2 {
@@ -77,12 +75,12 @@ body {
 
 .btn--a {
   margin: 100px 0px;
-  padding: 0% 35%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-@media screen and (min-width: 990px) {
-  .btn--a {
-    padding: 0% 40%;
-  }
+.btn--a--d {
+  text-align: center;
 }
 
 a {
@@ -101,12 +99,13 @@ button {
 
 .btn1 {
   margin: 2%;
-  margin-bottom: 10%;
-  border-radius: 5em 5em 5em 5em;
-  padding: 3em 6em;
+  margin-bottom: 5%;
+  border-radius: 100px 100px 100px 100px;
+  padding: 50px 100px;
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   box-shadow: 0px 15px 30px #d0d0d0;
+  font-size: 1.7em;
 }
 .btn1:hover {
   background: #ae80e5;
@@ -114,12 +113,8 @@ button {
 }
 @media screen and (min-width: 990px) {
   .btn1 {
-    font-size: 1em;
-  }
-}
-@media screen and (min-width: 990px) {
-  .btn1 {
     margin-bottom: 2%;
+    font-size: 1.3em;
   }
 }
 
@@ -130,12 +125,12 @@ button {
   border-radius: 50px;
   background-color: #f6f6f6;
   font-weight: 700;
-  font-size: 2.2em;
+  font-size: 2.5em;
   box-shadow: 0px 15px 30px #d0d0d0;
 }
 @media screen and (min-width: 990px) {
   .nav {
-    font-size: 1.1em;
+    font-size: 1.5em;
   }
 }
 @media screen and (min-width: 990px) {
@@ -336,20 +331,30 @@ button {
   }
 }
 
+.h4 {
+  padding: 1% 10% 1% 5%;
+}
 .h4--h {
   margin: 0px;
   padding: 0px;
   width: 35px;
-  font-size: 1em;
   cursor: crosshair;
   position: absolute;
-  bottom: 100px;
-  right: 100px;
+  bottom: 30px;
+  right: 8%;
 }
 @media screen and (min-width: 990px) {
   .h4--h {
-    bottom: 80px;
-    right: 120px;
+    bottom: 20px;
+    right: 5%;
+  }
+}
+.h4--h--h {
+  font-size: 4em;
+}
+@media screen and (min-width: 990px) {
+  .h4--h--h {
+    font-size: 0.5em;
   }
 }
 .h4--h--1 {
@@ -448,21 +453,21 @@ button {
   background-color: white;
   width: 92%;
   margin: 4%;
-  padding: 11px;
+  padding: 10px;
   border-radius: 30px;
-  font-family: "Roboto" black;
   text-align: left;
   position: relative;
+  overflow: hidden;
+  white-space: nowrap;
 }
 @media screen and (min-width: 990px) {
   .se2--btn {
-    padding: 5px;
     width: 32%;
     margin: 1%;
   }
 }
 .se2--btn--h2 {
-  margin: 0%;
+  margin: 0px 1px 0px 1px;
   padding: 2px;
   font-weight: 700;
   font-size: 3.4em;
@@ -473,7 +478,7 @@ button {
   }
 }
 .se2--btn--b {
-  margin: 0%;
+  margin: 0px 1px 0px 1px;
   padding: 2px;
   font-weight: 100;
   font-size: 2.4em;
@@ -484,7 +489,25 @@ button {
   }
 }
 .se2--btn--h3 {
-  float: right;
+  margin: 0%;
+  position: absolute;
+  right: 5%;
+  bottom: 2px;
+  font-size: 2.5em;
+}
+@media screen and (min-width: 990px) {
+  .se2--btn--h3 {
+    font-size: 1.5em;
+    bottom: 4px;
+  }
+}
+@media screen and (min-width: 990px) {
+  .se2--btn:hover > .se2--btn--cir {
+    display: block;
+  }
+}
+.se2--btn:active > .se2--btn--cir {
+  display: block;
 }
 .se2--btn--cir {
   font-size: 5em;
@@ -495,10 +518,57 @@ button {
   right: 0px;
   color: white;
   background-color: #99E2D0;
+  display: none;
 }
 @media screen and (min-width: 990px) {
   .se2--btn--cir {
     padding: 8px;
+  }
+}
+.se2--btn--1 {
+  animation: ap 0.3s;
+  animation-fill-mode: both;
+}
+.se2--btn--2 {
+  animation: ap 0.6s;
+  animation-fill-mode: both;
+}
+.se2--btn--3 {
+  animation: ap 0.9s;
+  animation-fill-mode: both;
+}
+.se2--btn--4 {
+  animation: ap 1.2s;
+  animation-fill-mode: both;
+}
+@keyframes ap {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 50px);
+  }
+  50% {
+    opacity: 0;
+    transform: translate(0px, 50px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 990px) {
+  @keyframes ap {
+    0% {
+      opacity: 0;
+      transform: translate(50px, 0px);
+    }
+    50% {
+      opacity: 0;
+      transform: translate(50px, 0px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
   }
 }
 
@@ -559,7 +629,7 @@ footer {
   margin: 0%;
   color: white;
   background-color: black;
-  padding: 20px;
+  padding: 2%;
   font-size: 2em;
 }
 footer i {
@@ -568,12 +638,11 @@ footer i {
 
 .fo1 {
   font-family: "Shrikhand";
-  font-size: 1em;
-  margin: 2px;
+  font-size: 1.5em;
 }
 @media screen and (min-width: 990px) {
   .fo1 {
-    font-size: 0.7em;
+    font-size: 1em;
   }
 }
 @media screen and (min-width: 990px) {
@@ -592,7 +661,7 @@ footer i {
   .fo {
     margin: 0%;
     padding: 0%;
-    width: 24%;
+    width: 25%;
   }
 }
 
@@ -601,11 +670,41 @@ header {
   padding-right: 30%;
   padding-top: 5%;
   padding-bottom: 3%;
+  position: relative;
   background-color: white;
+}
+@media screen and (min-width: 990px) {
+  header {
+    margin: 0%;
+    padding: 2% 0%;
+  }
 }
 
 .titre {
   width: 100%;
+}
+@media screen and (min-width: 990px) {
+  .titre {
+    height: 30px;
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 48%;
+  }
+}
+
+.arrow {
+  position: absolute;
+  top: 40px;
+  left: 5%;
+  font-size: 4em;
+}
+@media screen and (min-width: 990px) {
+  .arrow {
+    top: 4px;
+    left: 5%;
+    font-size: 2em;
+  }
 }
 
 /* index et pages */
@@ -633,12 +732,12 @@ header {
   background-color: #eaeaea;
   margin: 0%;
   font-weight: 100;
-  font-size: 2em;
+  font-size: 2.5em;
   text-align: center;
 }
 @media screen and (min-width: 990px) {
   .ar1 {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 }
 .ar1--i {
@@ -651,12 +750,12 @@ header {
   padding-left: 15%;
   padding-right: 15%;
   font-weight: 700;
-  font-size: 3em;
+  font-size: 3.5em;
   text-align: center;
 }
 @media screen and (min-width: 990px) {
   .ar2 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 }
 @media screen and (min-width: 990px) {
@@ -671,12 +770,12 @@ header {
   padding-left: 5%;
   padding-right: 5%;
   font-weight: 100;
-  font-size: 2em;
+  font-size: 2.5em;
   text-align: center;
 }
 @media screen and (min-width: 990px) {
   .ar3 {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 }
 @media screen and (min-width: 990px) {
@@ -695,13 +794,13 @@ header {
 .nav--f {
   padding: 0% 8%;
   font-weight: 700;
-  font-size: 3em;
+  font-size: 3.5em;
   text-align: center;
   text-align: left;
 }
 @media screen and (min-width: 990px) {
   .nav--f {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 }
 @media screen and (min-width: 990px) {
@@ -729,7 +828,7 @@ nav {
 
 .h1 {
   font-weight: 700;
-  font-size: 3em;
+  font-size: 3.5em;
   text-align: center;
   text-align: left;
   background-color: #f6f6f6;
@@ -738,7 +837,7 @@ nav {
 }
 @media screen and (min-width: 990px) {
   .h1 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 }
 @media screen and (min-width: 990px) {

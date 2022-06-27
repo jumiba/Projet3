@@ -4,10 +4,38 @@ header
     padding-right: 30%;
     padding-top: 5%;
     padding-bottom: 3%;
+    position: relative;
     background-color: white;
+    @media screen and (min-width: 990px)
+    {
+        margin: 0%;
+        padding: 2% 0%;
+    }
 }
 
 .titre
 {
     width: 100%;
+    @media screen and (min-width: 990px)
+    {
+        height: 30px;
+        width: 100px;
+        position: absolute;
+        top: 10px;
+        left: 48%;
+    }
+}
+
+.arrow
+{
+    position: absolute;
+    top: 40px;
+    left: 5%;
+    font-size: 4em;
+    @media screen and (min-width: 990px)
+    {
+        top: 4px;
+        left: 5%;
+        font-size: 2em;
+    }
 }
