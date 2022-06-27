@@ -1,5 +1,6 @@
 footer
 {
+    margin: 0%;
     color: white;
     background-color: black;
     padding: 20px;
@@ -14,4 +15,26 @@ footer
 {
     @include font-1;
     margin: 2px;
+    @media screen and (min-width: 990px)
+    {
+        text-align: center;
+    }
+}
+
+#fo
+{
+    @media screen and (min-width: 990px)
+    {
+        display: flex;
+    }
+}
+
+.fo
+{
+    @media screen and (min-width: 990px)
+    {
+        margin: 0%;
+        padding:0%;
+        width: 24%;
+    }
 }

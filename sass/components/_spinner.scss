@@ -11,9 +11,14 @@
         border-top: hidden;
         animation: spinner ease-in-out 750ms;
         animation-iteration-count: 3;
-        position: absolute;
+        position: fixed;
         align-items: center;
         opacity: 0;
+        top: 350px;
+        @media screen and (min-width: 990px)
+        {
+            top: -350px;
+        }
     }
 }
 

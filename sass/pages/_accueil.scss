@@ -1,4 +1,4 @@
-article
+#ar
 {
     background-color: $color-5;
     @include mobile;
@@ -64,6 +64,11 @@ article
     padding: 0% 8%;
     @include font-2;
     text-align: left;
+    @media screen and (min-width: 990px)
+    {
+        text-align: center;
+        padding: 0% 0%;
+    }
 }
 
 nav
@@ -77,13 +82,18 @@ nav
     }
 }
 
-h1
+.h1
 {
     @include font-2;
     text-align: left;
     background-color: $color-5;
     margin: 0%;
     padding: 3% 7%;
+    @media screen and (min-width: 990px)
+    {
+        text-align: center;
+        padding: 3% 0%;
+    }
 }
 
 #section
