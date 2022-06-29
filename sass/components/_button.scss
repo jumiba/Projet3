@@ -8,6 +8,7 @@ button
     @include btn;
 }
 
+/*choisir resto/commander*/
 .btn1
 {
     border-radius: 100px 100px 100px 100px;
@@ -29,6 +30,7 @@ button
     }
 }
 
+/*navigation*/
 .btn2
 {
     background-color: $color-5;
@@ -71,6 +73,7 @@ button
     }
 }
 
+/*resto*/
 .btn3
 {
     background-color: white;
@@ -136,6 +139,7 @@ button
     }
 }
 
+/*coeur index*/
 .btn4
 {
     position: relative;
@@ -154,13 +158,10 @@ button
         {
             font-size: 2em;
         }
-        &:visited > &--3
-        {
-        display: block;
-        }
     }
 }
 
+/*coeur page resto*/
 .btn5
 {
     padding: 1% 10% 1% 5%;
@@ -185,6 +186,8 @@ button
         }
     }
 }
+
+/*plats*/
 .btn6
 {
     background-color: white;
@@ -406,6 +409,7 @@ button
     @include tra;
 }
 
+/*commander*/
 .btn7
 {
     margin: 100px 0px;
