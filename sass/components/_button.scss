@@ -1,26 +1,27 @@
 a
 {
-    color: black;
-    text-decoration: none;
-    &:hover
-    {
-        box-shadow: $box-shadow-h;
-    }
+    @include btn;
 }
 
 button
 {
-    background-color: transparent;
-    text-decoration: none;
-    border: 0px;
+    @include btn;
 }
 
 .btn1
 {
-    margin: 2%;
-    margin-bottom: 5%;
-    @include btn-1;
+    border-radius: 100px 100px 100px 100px;
+    padding: 50px 100px;
+    background: linear-gradient($color-2, $color-1);
+    color: white;
+    box-shadow: $box-shadow;
+    margin: 2% 2% 5% 2%;
     font-size: 1.7em;
+    &:hover
+    {
+        background: lighten($color-1, 10%);
+        background: lighten($color-2, 10%);
+    }
     @media screen and (min-width: 990px)
     {
         margin-bottom: 2%;
@@ -28,18 +29,16 @@ button
     }
 }
 
-.nav
+.btn2
 {
+    background-color: $color-5;
     margin: 2%;
     padding: 5% 0%;
     width: 100%;
     border-radius: 50px;
-    background-color: $color-5;
     @include font-3;
-    box-shadow: $box-shadow;
     @media screen and (min-width: 990px)
     {
-        display: flex;
         align-items: center;
         padding:1%;
         width: 30%;
@@ -58,7 +57,6 @@ button
         background-color: $color-1;
         color: white;
         border-radius: 50px;
-        font-family: 'Roboto';
         font-weight: 100;
         padding: 7px 20px;
         margin-left: -20px;
@@ -73,7 +71,7 @@ button
     }
 }
 
-.se
+.btn3
 {
     background-color: white;
     margin: 1%;
@@ -85,7 +83,22 @@ button
         width: 23%;
         height: 300px;
     }
-
+    &--em
+    {
+        background-color: $color-3;
+        color: darken($color-3,20%);
+        font-weight: bold;
+        font-size: 1.5em;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 15px;
+        border-radius: 5px;
+        @media screen and (min-width: 990px)
+        {
+            font-size: 1em;
+        }
+    }
     &--img
     {
         width: 100%;
@@ -121,149 +134,34 @@ button
             font-size: 1.5em;
         }
     }
+}
 
-    &--em
-    {
-        background-color: $color-3;
-        color: darken($color-3,20%);
-        font-weight: bold;
-        font-size: 1.5em;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        padding: 15px;
-        border-radius: 5px;
-        @media screen and (min-width: 990px)
-        {
-            font-size: 1em;
-        }
-    }
-    &--as
-    {
-        position: relative;
-    }
+.btn4
+{
+    position: relative;
+    background-color: transparent;
     &--h
     {
         margin:0px;
         padding:0px;
         width: 35px;
-        font-size: 4em;
-        cursor: crosshair;
         position: absolute;
         bottom: 30px;
         right: 50px;
-        &--1
-        {
-            display: block;
-        }
-        &--2
-        {
-            display: none;
-            color: $color-1;
-        }
-        &--3
-        {
-            display: none;
-            color: $color-2;
-        }
-        &:hover > &--1
-        {
-            display: none;
-        }
-        &:hover > &--2
-        {
-            display: block;
-        }
-        &:hover > &--3
-        {
-            display: none;
-        }
-        &:active > &--1
-        {
-            display: none;
-        }
-        &:active > &--2
-        {
-            display: block;
-            position: absolute;
-        }
-        &:active > &--3
-        {
-            display: block;
-            animation: hearto ease-in-out 2s;
-            animation-fill-mode: both;
-            transform-origin: bottom;
-            @keyframes hearto{
-                from{
-                    transform: scale(0);
-                    opacity: 0.2; 
-                }
-                to {
-                    transform: scale(1);
-                    opacity: 1;
-                }
-            }
-        }
+        font-size: 4em;
+        @include btn-h;
         @media screen and (min-width: 990px)
         {
             font-size: 2em;
-            &--1
-            {
-                display: block;
-            }
-            &--2
-            {
-                display: none;
-                color: $color-1;
-            }
-            &--3
-            {
-                display: none;
-                color: $color-2;
-            }
-            &:hover > &--1
-            {
-                display: none;
-            }
-            &:hover > &--2
-            {
-                display: block;
-                position: absolute;
-            }
-            &:hover > &--3
-            {
-                display: block;
-                animation: heart ease-in-out 2s;
-                animation-fill-mode: both;
-                transform-origin: bottom;
-                @keyframes heart{
-                    from{
-                        transform: scale(0);
-                        opacity: 0.2; 
-                    }
-                    to {
-                        transform: scale(1);
-                        opacity: 1;
-                    }
-                }
-            }
-            &:active > &--1
-            {
-                display: none;
-            }
-            &:active > &--2
-            {
-                display: none;
-            }
-            &:active > &--3
-            {
-                display: block;
-            }
+        }
+        &:visited > &--3
+        {
+        display: block;
         }
     }
 }
 
-.h4
+.btn5
 {
     padding: 1% 10% 1% 5%;
     &--h
@@ -271,150 +169,72 @@ button
         margin:0px;
         padding:0px;
         width: 35px;
-        cursor: crosshair;
         position: absolute;
-        bottom: 30px;
-        right: 8%;
+        bottom: 15px;
+        right: 10%;
+        font-size: 3em;
+        @include btn-h;
         @media screen and (min-width: 990px)
         {
-            bottom: 20px;
-            right: 5%;
-        }
-        &--h
-        {
-            font-size: 4em;
-            @media screen and (min-width: 990px)
-            {
-                font-size: 0.5em;
-            }
-        }
-        &--1
-        {
-            display: block;
-        }
-        &--2
-        {
-            display: none;
-            color: $color-1;
-        }
-        &--3
-        {
-            display: none;
-            color: $color-2;
-        }
-        &:hover > &--1
-        {
-            display: none;
-        }
-        &:hover > &--2
-        {
-            display: block;
-        }
-        &:hover > &--3
-        {
-            display: none;
-        }
-        &:active > &--1
-        {
-            display: none;
-        }
-        &:active > &--2
-        {
-            display: block;
-            position: absolute;
-        }
-        &:active > &--3
-        {
-            display: block;
-            animation: hearto ease-in-out 2s;
-            animation-fill-mode: both;
-            transform-origin: bottom;
-            @keyframes hearto{
-                from{
-                    transform: scale(0);
-                    opacity: 0.2; 
-                }
-                to {
-                    transform: scale(1);
-                    opacity: 1;
-                }
-            }
-        }
-        @media screen and (min-width: 990px)
-        {
+            bottom: 5px;
             font-size: 2em;
-            &--1
-            {
-                display: block;
-            }
-            &--2
-            {
-                display: none;
-                color: $color-1;
-            }
-            &--3
-            {
-                display: none;
-                color: $color-2;
-            }
-            &:hover > &--1
-            {
-                display: none;
-            }
-            &:hover > &--2
-            {
-                display: block;
-                position: absolute;
-            }
-            &:hover > &--3
-            {
-                display: block;
-                animation: heart ease-in-out 2s;
-                animation-fill-mode: both;
-                transform-origin: bottom;
-                @keyframes heart{
-                    from{
-                        transform: scale(0);
-                        opacity: 0.2; 
-                    }
-                    to {
-                        transform: scale(1);
-                        opacity: 1;
-                    }
-                }
-            }
-            &:active > &--1
-            {
-                display: none;
-            }
-            &:active > &--2
-            {
-                display: none;
-            }
-            &:active > &--3
-            {
-                display: block;
-            }
+        }
+        &:visited > &--3
+        {
+        display: block;
         }
     }
 }
-.se2--btn
+.btn6
 {
     background-color: white;
-    width: 92%;
+    width: 90%;
     margin: 4%;
-    padding: 10px;
+    padding: 15px;
     border-radius: 30px;
     text-align: left;
     position: relative;
     overflow: hidden;
-    white-space:nowrap;
+    &:active > &--3
+    {
+        animation: righ ease-in-out 1s;
+        animation-fill-mode: both;
+        @keyframes righ
+        {
+            0%{
+                right: 15px;
+            }
+            40% {
+                right: 30px;
+            }  
+            100% {
+                right: 150px;
+            }  
+        }
+    }
     @media screen and (min-width: 990px)
     {
         width: 32%;
         margin: 1%;
+        &:hover > &--3
+        {
+            animation: rig ease-in-out 1s;
+            animation-fill-mode: both;
+            @keyframes rig
+            {
+                0%{
+                    right: 15px;
+                }
+                50%{
+                    right: 15px;
+                }
+                100% {
+                    right: 100px;
+                }  
+            }
+        }
     }
-    &--h2
+    &--1
     {
         margin: 0px 1px 0px 1px;
         padding: 2px;
@@ -425,7 +245,28 @@ button
             font-size: 2em;
         }
     }
-    &--b
+
+    &--d
+    {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space:nowrap;
+    }
+
+    &:hover > &--d
+    {
+        @media screen and (min-width: 990px)
+        {
+            width: 80%;
+        }
+    }
+
+    &:active > &--d
+    {
+        width: 80%;
+    }
+
+    &--2
     {
         margin: 0px 1px 0px 1px;
         padding: 2px;
@@ -436,11 +277,11 @@ button
             font-size: 1em;
         }
     }
-    &--h3
+    &--3
     {
         margin: 0%;
         position: absolute;
-        right: 5%;
+        right: 10px;
         bottom: 2px;
         font-size: 2.5em;
         @media screen and (min-width: 990px)
@@ -448,24 +289,10 @@ button
             font-size: 1.5em;
             bottom: 4px;
         }
-
-    }
-    &:hover > &--cir
-    {
-        @media screen and (min-width: 990px)
-        {
-            display: block;
-        }
-    }
-
-    &:active > &--cir
-    {
-        display: block;
     }
     &--cir
     {
-        font-size: 5em;
-        padding: 25px;
+        padding: 40px;
         border-radius: 0px 30px 30px 0px;
         position: absolute;
         bottom: 0px;
@@ -473,33 +300,120 @@ button
         color: white;
         background-color: $color-3;
         display: none;
+        animation: cir ease-in-out 1s;
+        animation-fill-mode: both;
         @media screen and (min-width: 990px)
         {
-            padding: 8px;
+            padding: 20px;
         }
-
     }
-    &--1
+    &:hover > &--cir
     {
-        animation: ap 0.3s;
-        @include apa;
+        @media screen and (min-width: 990px)
+        {
+            display: block;
+            @keyframes cir
+            {
+                0%{
+                    transform: translate(150px, 0px);
+                }
+                100% {
+                    transform: translate(0px, 0px);
+                }  
+            }
+        }
+    }
+    &:active > &--cir
+    {
+        display: block;
+        @keyframes cir
+        {
+            0%{
+                transform: translate(150px, 0px);
+            }
+            100% {
+                transform: translate(0px, 0px);
+            }  
+        }
+    }
+    &:visited > &--cir
+    {
+    display: block;
+    }
+
+    &--i
+    {
+        font-size: 3em;
+        animation: i ease-in-out 1s;
+        animation-fill-mode: both;
+    }
+    &:hover > &--i
+    {
+        @media screen and (min-width: 990px)
+        {
+            display: block;
+            @keyframes i
+            {
+                0%{
+                    transform: rotate(0deg);
+                }
+                50%{
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }  
+            }
+        }
+    }
+    &:active > &--i
+    {
+        display: block;
+        @keyframes i
+        {
+            0%{
+                transform: rotate(0deg);
+            }
+            50%{
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }  
+        }
+    }
+    &--b1
+    {
+        animation: tra 0.3s;
+        animation-fill-mode: both;
         
     }
-    &--2
+    &--b2
     {
-        animation: ap 0.6s;
-        @include apa;
+        animation: tra 0.6s;
+        animation-fill-mode: both;
     }
-    &--3
+    &--b3
     {
-        animation: ap 0.9s;
-        @include apa;
+        animation: tra 0.9s;
+        animation-fill-mode: both;
     }
-    &--4
+    &--b4
     {
-        animation: ap 1.2s;
-        @include apa;
+        animation: tra 1.2s;
+        animation-fill-mode: both;
     }
+    @include tra;
+}
 
-    @include ap;
+.btn7
+{
+    margin: 100px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &--d
+    {
+    text-align: center;
+    }
 }

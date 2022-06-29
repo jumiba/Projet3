@@ -1,18 +1,24 @@
 footer
 {
     margin: 0%;
+    padding: 10px 0px 10px 20px;
     color: white;
     background-color: black;
-    padding: 2%;
     font-size: 2em;
     & i
     {
         padding-right: 2%;
     }
+    @media screen and (min-width: 990px)
+    {
+        padding:0%;
+    }
 }
 
 .fo1
 {
+    margin: 0%;
+    padding:20px 0px;
     @include font-1;
     @media screen and (min-width: 990px)
     {
@@ -22,14 +28,13 @@ footer
 
 #fo
 {
-    @media screen and (min-width: 990px)
-    {
-        display: flex;
-    }
+    @include screen;
 }
 
 .fo
 {
+    margin: 0%;
+    padding:10px 0px;
     @media screen and (min-width: 990px)
     {
         margin: 0%;
