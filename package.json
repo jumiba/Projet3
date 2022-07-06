@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jumiba/projet3/issues"
   },
-  "homepage": "https://github.com/jumiba/projet3#readme"
+  "homepage": "https://github.com/jumiba/projet3#readme",
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
 }

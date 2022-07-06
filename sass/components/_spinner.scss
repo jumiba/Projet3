@@ -3,9 +3,9 @@
     display:flex;
     &-d
     {
-        margin:40%;
-        height: 200px;
-        width: 200px;
+        margin:35%;
+        height: 100px;
+        width: 100px;
         border-radius: 50%;
         border: 3px solid $color-1;
         border-top: hidden;
@@ -17,6 +17,9 @@
         top: 150px;
         @media screen and (min-width: 990px)
         {
+            margin:40%;
+            height: 200px;
+            width: 200px;
             top: -350px;
         }
     }

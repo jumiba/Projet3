@@ -12,8 +12,7 @@
 
 .ar1
 {
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding: 20px 0px;
     width: 100%;
     background-color: $color-4;
     margin: 0%;
@@ -27,17 +26,14 @@
 .ar2
 {
     margin: 2%;
-    margin-top: 10%;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding: 15px 15% 0px 15%;
     @include font-2;
 }
 
 .ar3
 {
     margin: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 10px 5%;
     @include font-4;
 }
 
@@ -53,6 +49,7 @@
 .nav--1
 {
     padding: 0% 8%;
+    margin: 20px 0px 10px 0px;
     @include font-2;
     text-align: left;
     @media screen and (min-width: 990px)
@@ -66,7 +63,7 @@
 #nav
 {
     @include screen;
-    margin: 7%;
+    margin: 0px 7% 10px 7%;
     @media screen and (min-width: 990px)
     {
         margin: 0%;
@@ -79,7 +76,7 @@
     text-align: left;
     background-color: $color-5;
     margin: 0%;
-    padding: 3% 7%;
+    padding: 30px 0% 5px 0%;
     @media screen and (min-width: 990px)
     {
         text-align: center;
@@ -92,7 +89,7 @@
     @include screen;
     background-color: $color-5;
     margin: 0%;
-    padding: 3% 7%;
+    padding: 5%;
     @media screen and (min-width: 990px)
     {
         padding: 0%;

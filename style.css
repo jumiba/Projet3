@@ -33,12 +33,12 @@ button:hover {
 /*choisir resto/commander*/
 .btn1 {
   border-radius: 100px 100px 100px 100px;
-  padding: 50px 100px;
+  padding: 20px 40px;
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   box-shadow: 0px 15px 30px #d0d0d0;
-  margin: 2% 2% 5% 2%;
-  font-size: 1.7em;
+  margin: 5px 2% 40px 2%;
+  font-size: 1em;
 }
 .btn1:hover {
   background: #ae80e5;
@@ -54,13 +54,14 @@ button:hover {
 /*navigation*/
 .btn2 {
   background-color: #f6f6f6;
-  margin: 2%;
-  padding: 5% 0%;
+  margin: 10px 2%;
+  padding: 25px 0px;
   width: 100%;
-  border-radius: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px #d0d0d0;
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 2.8em;
+  font-weight: bold;
+  font-size: 1em;
 }
 @media screen and (min-width: 990px) {
   .btn2 {
@@ -86,14 +87,36 @@ button:hover {
   color: white;
   border-radius: 50px;
   font-weight: 100;
-  padding: 7px 20px;
-  margin-left: -20px;
+  padding: 7px 12px;
+  margin-left: -10px;
+}
+@media screen and (min-width: 990px) {
+  .btn2--s {
+    padding: 7px 14px;
+    margin-left: -25px;
+  }
 }
 .btn2--i {
-  margin: 0px 45px;
+  margin: 0px 1px;
 }
 .btn2--i--1 {
-  margin: 0px 50px;
+  margin: 0px 2px;
+}
+@media screen and (max-width: 990px) {
+  .btn2--i {
+    margin: 0px 3%;
+  }
+  .btn2--i--1 {
+    margin: 0px 4%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .btn2--i {
+    margin: 0px 4%;
+  }
+  .btn2--i--1 {
+    margin: 0px 5%;
+  }
 }
 
 /*resto*/
@@ -101,7 +124,7 @@ button:hover {
   background-color: white;
   margin: 1%;
   margin-bottom: 1%;
-  border-radius: 50px;
+  border-radius: 20px;
   position: relative;
 }
 @media screen and (min-width: 990px) {
@@ -112,25 +135,20 @@ button:hover {
 }
 .btn3--em {
   background-color: #99E2D0;
-  color: #4acbab;
+  color: #278870;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1em;
   position: absolute;
   top: 20px;
   right: 20px;
-  padding: 15px;
+  padding: 10px;
   border-radius: 5px;
-}
-@media screen and (min-width: 990px) {
-  .btn3--em {
-    font-size: 1em;
-  }
 }
 .btn3--img {
   width: 100%;
-  height: 400px;
+  height: 200px;
   object-fit: cover;
-  border-radius: 50px 50px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
 }
 @media screen and (min-width: 990px) {
   .btn3--img {
@@ -140,23 +158,22 @@ button:hover {
   }
 }
 .btn3--h2 {
-  margin: 1%;
-  margin-left: 4%;
-  font-size: 2.7em;
+  margin: 10px 0px 5px 4%;
+  font-size: 1.3em;
+  font-weight: bold;
 }
 @media screen and (min-width: 990px) {
   .btn3--h2 {
-    font-size: 1.7em;
+    font-size: 1.5em;
   }
 }
 .btn3--p {
-  margin: 0%;
-  margin-left: 5%;
-  font-size: 2em;
+  margin: 0px 0px 10px 4%;
+  font-size: 1em;
 }
 @media screen and (min-width: 990px) {
   .btn3--p {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 }
 
@@ -170,9 +187,9 @@ button:hover {
   padding: 0px;
   width: 35px;
   position: absolute;
-  bottom: 30px;
-  right: 50px;
-  font-size: 4em;
+  bottom: 25px;
+  right: 30px;
+  font-size: 1.8em;
   cursor: crosshair;
 }
 .btn4--h--1 {
@@ -180,19 +197,15 @@ button:hover {
 }
 .btn4--h--2 {
   display: none;
-  color: #9356DC;
-}
-.btn4--h--3 {
-  display: none;
-  color: #FF79DA;
+  background: linear-gradient(to left, #FF79DA, #9356DC);
+  background-clip: linear-gradient(to left, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .btn4--h:hover > .btn4--h--1 {
-  display: none;
-}
-.btn4--h:hover > .btn4--h--2 {
   display: block;
 }
-.btn4--h:hover > .btn4--h--3 {
+.btn4--h:hover > .btn4--h--2 {
   display: none;
 }
 .btn4--h:active > .btn4--h--1 {
@@ -200,21 +213,15 @@ button:hover {
 }
 .btn4--h:active > .btn4--h--2 {
   display: block;
-  position: absolute;
-}
-.btn4--h:active > .btn4--h--3 {
-  display: block;
   animation: heart ease-in-out 1s;
   animation-fill-mode: both;
   transform-origin: bottom;
 }
 @keyframes heart {
   from {
-    transform: scale(0);
     opacity: 0.2;
   }
   to {
-    transform: scale(1);
     opacity: 1;
   }
 }
@@ -224,20 +231,15 @@ button:hover {
   }
   .btn4--h--2 {
     display: none;
-    color: #9356DC;
-  }
-  .btn4--h--3 {
-    display: none;
-    color: #FF79DA;
+    background: linear-gradient(to left, #FF79DA, #9356DC);
+    background-clip: linear-gradient(to left, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    color: transparent;
   }
   .btn4--h:hover > .btn4--h--1 {
     display: none;
   }
   .btn4--h:hover > .btn4--h--2 {
-    display: block;
-    position: absolute;
-  }
-  .btn4--h:hover > .btn4--h--3 {
     display: block;
     animation: heart ease-in-out 1s;
     animation-fill-mode: both;
@@ -245,11 +247,9 @@ button:hover {
   }
   @keyframes heart {
     from {
-      transform: scale(0);
       opacity: 0.2;
     }
     to {
-      transform: scale(1);
       opacity: 1;
     }
   }
@@ -257,15 +257,14 @@ button:hover {
     display: none;
   }
   .btn4--h:active > .btn4--h--2 {
-    display: none;
-  }
-  .btn4--h:active > .btn4--h--3 {
     display: block;
   }
 }
 @media screen and (min-width: 990px) {
   .btn4--h {
     font-size: 2em;
+    bottom: 20px;
+    right: 30px;
   }
 }
 
@@ -278,9 +277,9 @@ button:hover {
   padding: 0px;
   width: 35px;
   position: absolute;
-  bottom: 15px;
-  right: 10%;
-  font-size: 3em;
+  bottom: 45px;
+  right: 8%;
+  font-size: 1.8em;
   cursor: crosshair;
 }
 .btn5--h--1 {
@@ -288,19 +287,15 @@ button:hover {
 }
 .btn5--h--2 {
   display: none;
-  color: #9356DC;
-}
-.btn5--h--3 {
-  display: none;
-  color: #FF79DA;
+  background: linear-gradient(to left, #FF79DA, #9356DC);
+  background-clip: linear-gradient(to left, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .btn5--h:hover > .btn5--h--1 {
-  display: none;
-}
-.btn5--h:hover > .btn5--h--2 {
   display: block;
 }
-.btn5--h:hover > .btn5--h--3 {
+.btn5--h:hover > .btn5--h--2 {
   display: none;
 }
 .btn5--h:active > .btn5--h--1 {
@@ -308,21 +303,15 @@ button:hover {
 }
 .btn5--h:active > .btn5--h--2 {
   display: block;
-  position: absolute;
-}
-.btn5--h:active > .btn5--h--3 {
-  display: block;
   animation: heart ease-in-out 1s;
   animation-fill-mode: both;
   transform-origin: bottom;
 }
 @keyframes heart {
   from {
-    transform: scale(0);
     opacity: 0.2;
   }
   to {
-    transform: scale(1);
     opacity: 1;
   }
 }
@@ -332,20 +321,15 @@ button:hover {
   }
   .btn5--h--2 {
     display: none;
-    color: #9356DC;
-  }
-  .btn5--h--3 {
-    display: none;
-    color: #FF79DA;
+    background: linear-gradient(to left, #FF79DA, #9356DC);
+    background-clip: linear-gradient(to left, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    color: transparent;
   }
   .btn5--h:hover > .btn5--h--1 {
     display: none;
   }
   .btn5--h:hover > .btn5--h--2 {
-    display: block;
-    position: absolute;
-  }
-  .btn5--h:hover > .btn5--h--3 {
     display: block;
     animation: heart ease-in-out 1s;
     animation-fill-mode: both;
@@ -353,11 +337,9 @@ button:hover {
   }
   @keyframes heart {
     from {
-      transform: scale(0);
       opacity: 0.2;
     }
     to {
-      transform: scale(1);
       opacity: 1;
     }
   }
@@ -365,15 +347,12 @@ button:hover {
     display: none;
   }
   .btn5--h:active > .btn5--h--2 {
-    display: none;
-  }
-  .btn5--h:active > .btn5--h--3 {
     display: block;
   }
 }
 @media screen and (min-width: 990px) {
   .btn5--h {
-    bottom: 5px;
+    bottom: 40px;
     font-size: 2em;
   }
 }
@@ -384,13 +363,13 @@ button:hover {
 /*plats*/
 .btn6 {
   background-color: white;
-  width: 90%;
-  margin: 4%;
+  margin: 10px 4%;
   padding: 15px;
-  border-radius: 30px;
+  border-radius: 15px;
   text-align: left;
   position: relative;
   overflow: hidden;
+  box-shadow: 0px 5px 10px #d0d0d0;
 }
 .btn6:active > .btn6--3 {
   animation: righ ease-in-out 1s;
@@ -404,7 +383,7 @@ button:hover {
     right: 30px;
   }
   100% {
-    right: 150px;
+    right: 90px;
   }
 }
 @media screen and (min-width: 990px) {
@@ -429,14 +408,12 @@ button:hover {
   }
 }
 .btn6--1 {
-  margin: 0px 1px 0px 1px;
-  padding: 2px;
-  font-weight: 700;
-  font-size: 3.4em;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 @media screen and (min-width: 990px) {
   .btn6--1 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
 .btn6--d {
@@ -445,18 +422,21 @@ button:hover {
   white-space: nowrap;
 }
 @media screen and (min-width: 990px) {
+  .btn6--d {
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 990px) {
   .btn6:hover > .btn6--d {
-    width: 80%;
+    width: 50%;
   }
 }
 .btn6:active > .btn6--d {
-  width: 80%;
+  width: 65%;
 }
 .btn6--2 {
-  margin: 0px 1px 0px 1px;
-  padding: 2px;
   font-weight: 100;
-  font-size: 2.4em;
+  font-size: 1em;
 }
 @media screen and (min-width: 990px) {
   .btn6--2 {
@@ -464,21 +444,21 @@ button:hover {
   }
 }
 .btn6--3 {
-  margin: 0%;
   position: absolute;
   right: 10px;
-  bottom: 2px;
-  font-size: 2.5em;
+  bottom: 15px;
+  font-size: 1em;
+  font-weight: bold;
 }
 @media screen and (min-width: 990px) {
   .btn6--3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     bottom: 4px;
   }
 }
 .btn6--cir {
-  padding: 50px;
-  border-radius: 0px 30px 30px 0px;
+  padding: 25px;
+  border-radius: 0px 15px 15px 0px;
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -521,9 +501,14 @@ button:hover {
   display: block;
 }
 .btn6--i {
-  font-size: 3em;
+  font-size: 1.5em;
   animation: i ease-in-out 1s;
   animation-fill-mode: both;
+}
+@media screen and (min-width: 990px) {
+  .btn6--i {
+    font-size: 3em;
+  }
 }
 @media screen and (min-width: 990px) {
   .btn6:hover > .btn6--i {
@@ -604,22 +589,35 @@ button:hover {
 
 /*commander*/
 .btn7 {
-  margin: 100px 0px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.btn7--d {
+  margin: 50px 0%;
   text-align: center;
+}
+.btn7--a {
+  border-radius: 100px 100px 100px 100px;
+  padding: 20px 40px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  box-shadow: 0px 15px 30px #d0d0d0;
+  font-size: 1.5em;
+}
+.btn7--a:hover {
+  background: #ae80e5;
+  background: #fface8;
+}
+@media screen and (min-width: 990px) {
+  .btn7--a {
+    margin-bottom: 2%;
+    font-size: 1.3em;
+  }
 }
 
 .load {
   display: flex;
 }
 .load-d {
-  margin: 40%;
-  height: 200px;
-  width: 200px;
+  margin: 35%;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
   border: 3px solid #9356DC;
   border-top: hidden;
@@ -632,6 +630,9 @@ button:hover {
 }
 @media screen and (min-width: 990px) {
   .load-d {
+    margin: 40%;
+    height: 200px;
+    width: 200px;
     top: -350px;
   }
 }
@@ -670,23 +671,33 @@ footer {
   margin: 0%;
   padding: 10px 0px 10px 20px;
   color: white;
-  background-color: black;
-  font-size: 2em;
+  background-color: rgb(53, 53, 53);
+  font-size: 1.2em;
 }
-footer i {
-  padding-right: 2%;
+
+.ii-1 {
+  padding-right: 20px;
 }
 @media screen and (min-width: 990px) {
-  footer {
-    padding: 0%;
+  .ii-1 {
+    padding-right: 5px;
+  }
+}
+
+.ii-2 {
+  padding-right: 12px;
+}
+@media screen and (min-width: 990px) {
+  .ii-2 {
+    padding-right: 5px;
   }
 }
 
 .fo1 {
   margin: 0%;
-  padding: 20px 0px;
+  padding: 10px 0px;
   font-family: "Shrikhand", cursive;
-  font-size: 2em;
+  font-size: 1em;
 }
 @media screen and (min-width: 990px) {
   .fo1 {
@@ -697,6 +708,11 @@ footer i {
   .fo1 {
     text-align: center;
   }
+}
+
+.fo5 {
+  background-color: rgb(53, 53, 53);
+  color: white;
 }
 
 @media screen and (max-width: 990px) {
@@ -713,7 +729,7 @@ footer i {
 
 .fo {
   margin: 0%;
-  padding: 10px 0px;
+  padding: 3px 0px;
 }
 @media screen and (min-width: 990px) {
   .fo {
@@ -724,17 +740,14 @@ footer i {
 }
 
 header {
-  padding-left: 30%;
-  padding-right: 30%;
-  padding-top: 5%;
-  padding-bottom: 3%;
+  padding: 30px 30% 20px 30%;
+  margin: 0%;
   position: relative;
   background-color: white;
 }
 @media screen and (min-width: 990px) {
   header {
-    margin: 0%;
-    padding: 2% 0%;
+    padding: 40px 30%;
   }
 }
 
@@ -743,19 +756,18 @@ header {
 }
 @media screen and (min-width: 990px) {
   .titre {
-    height: 30px;
-    width: 100px;
     position: absolute;
-    top: 10px;
-    left: 48%;
+    top: 15px;
+    left: 40%;
+    width: 20%;
   }
 }
 
 .arrow {
   position: absolute;
-  top: 40px;
+  top: 25px;
   left: 5%;
-  font-size: 4em;
+  font-size: 1.5em;
 }
 @media screen and (min-width: 990px) {
   .arrow {
@@ -788,14 +800,13 @@ header {
 }
 
 .ar1 {
-  padding-top: 4%;
-  padding-bottom: 4%;
+  padding: 20px 0px;
   width: 100%;
   background-color: #eaeaea;
   margin: 0%;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
-  font-size: 1.8em;
+  font-size: 1em;
   text-align: center;
 }
 @media screen and (min-width: 990px) {
@@ -809,12 +820,10 @@ header {
 
 .ar2 {
   margin: 2%;
-  margin-top: 10%;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding: 15px 15% 0px 15%;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 4em;
+  font-size: 1.5em;
   text-align: center;
 }
 @media screen and (min-width: 990px) {
@@ -825,11 +834,10 @@ header {
 
 .ar3 {
   margin: 2%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 10px 5%;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
-  font-size: 1.8em;
+  font-size: 1em;
   text-align: center;
 }
 @media screen and (min-width: 990px) {
@@ -847,9 +855,10 @@ header {
 
 .nav--1 {
   padding: 0% 8%;
+  margin: 20px 0px 10px 0px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 4em;
+  font-size: 1.5em;
   text-align: center;
   text-align: left;
 }
@@ -867,7 +876,7 @@ header {
 }
 
 #nav {
-  margin: 7%;
+  margin: 0px 7% 10px 7%;
 }
 @media screen and (max-width: 990px) {
   #nav {
@@ -889,12 +898,12 @@ header {
 .se0--1 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 4em;
+  font-size: 1.5em;
   text-align: center;
   text-align: left;
   background-color: #f6f6f6;
   margin: 0%;
-  padding: 3% 7%;
+  padding: 30px 0% 5px 0%;
 }
 @media screen and (min-width: 990px) {
   .se0--1 {
@@ -911,7 +920,7 @@ header {
 #se0 {
   background-color: #f6f6f6;
   margin: 0%;
-  padding: 3% 7%;
+  padding: 5%;
 }
 @media screen and (max-width: 990px) {
   #se0 {
@@ -940,12 +949,17 @@ body {
   padding: 0%;
   background-color: transparent;
 }
+@media screen and (min-width: 990px) {
+  .se1 {
+    margin: 20px 0px 0px 0px;
+  }
+}
 .se1--1 {
   background-color: white;
 }
 .se1--img {
   width: 100%;
-  height: 600px;
+  height: 300px;
   object-fit: cover;
 }
 @media screen and (min-width: 990px) {
@@ -964,8 +978,8 @@ body {
 }
 .se1--2--h4 {
   font-family: "Shrikhand";
-  font-size: 4em;
-  padding: 0% 5%;
+  font-size: 1.8em;
+  padding: 40px 5%;
   margin: 0px 0px -60px 0px;
   border-radius: 50px 50px 0px 0px;
   background-color: #f6f6f6;
@@ -985,13 +999,13 @@ body {
 }
 .se2--h1 {
   font-weight: 100;
-  font-size: 2.2em;
+  font-size: 1.5em;
   margin: 0% 5%;
   padding-top: 15px;
 }
 .se2--hb {
-  margin: 0% 5%;
-  width: 100px;
+  margin: 10px 5%;
+  width: 60px;
   border-top: 5px solid #99E2D0;
 }
 @media screen and (max-width: 990px) {
@@ -1015,10 +1029,11 @@ body {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  width: 80%;
 }
 @media screen and (min-width: 990px) {
   .btn6:hover > .btn6--d--4pla {
-    width: 60%;
+    width: 30%;
   }
 }
 .btn6:active > .btn6--d--4pla {
@@ -1035,12 +1050,17 @@ body {
   padding: 0%;
   background-color: transparent;
 }
+@media screen and (min-width: 990px) {
+  .se1 {
+    margin: 20px 0px 0px 0px;
+  }
+}
 .se1--1 {
   background-color: white;
 }
 .se1--img {
   width: 100%;
-  height: 600px;
+  height: 300px;
   object-fit: cover;
 }
 @media screen and (min-width: 990px) {
@@ -1059,8 +1079,8 @@ body {
 }
 .se1--2--h4 {
   font-family: "Shrikhand";
-  font-size: 4em;
-  padding: 0% 5%;
+  font-size: 1.8em;
+  padding: 40px 5%;
   margin: 0px 0px -60px 0px;
   border-radius: 50px 50px 0px 0px;
   background-color: #f6f6f6;
@@ -1080,13 +1100,13 @@ body {
 }
 .se2--h1 {
   font-weight: 100;
-  font-size: 2.2em;
+  font-size: 1.5em;
   margin: 0% 5%;
   padding-top: 15px;
 }
 .se2--hb {
-  margin: 0% 5%;
-  width: 100px;
+  margin: 10px 5%;
+  width: 60px;
   border-top: 5px solid #99E2D0;
 }
 @media screen and (max-width: 990px) {
@@ -1111,12 +1131,17 @@ body {
   padding: 0%;
   background-color: transparent;
 }
+@media screen and (min-width: 990px) {
+  .se1 {
+    margin: 20px 0px 0px 0px;
+  }
+}
 .se1--1 {
   background-color: white;
 }
 .se1--img {
   width: 100%;
-  height: 600px;
+  height: 300px;
   object-fit: cover;
 }
 @media screen and (min-width: 990px) {
@@ -1135,8 +1160,8 @@ body {
 }
 .se1--2--h4 {
   font-family: "Shrikhand";
-  font-size: 4em;
-  padding: 0% 5%;
+  font-size: 1.8em;
+  padding: 40px 5%;
   margin: 0px 0px -60px 0px;
   border-radius: 50px 50px 0px 0px;
   background-color: #f6f6f6;
@@ -1156,13 +1181,13 @@ body {
 }
 .se2--h1 {
   font-weight: 100;
-  font-size: 2.2em;
+  font-size: 1.5em;
   margin: 0% 5%;
   padding-top: 15px;
 }
 .se2--hb {
-  margin: 0% 5%;
-  width: 100px;
+  margin: 10px 5%;
+  width: 60px;
   border-top: 5px solid #99E2D0;
 }
 @media screen and (max-width: 990px) {
@@ -1187,12 +1212,17 @@ body {
   padding: 0%;
   background-color: transparent;
 }
+@media screen and (min-width: 990px) {
+  .se1 {
+    margin: 20px 0px 0px 0px;
+  }
+}
 .se1--1 {
   background-color: white;
 }
 .se1--img {
   width: 100%;
-  height: 600px;
+  height: 300px;
   object-fit: cover;
 }
 @media screen and (min-width: 990px) {
@@ -1211,8 +1241,8 @@ body {
 }
 .se1--2--h4 {
   font-family: "Shrikhand";
-  font-size: 4em;
-  padding: 0% 5%;
+  font-size: 1.8em;
+  padding: 40px 5%;
   margin: 0px 0px -60px 0px;
   border-radius: 50px 50px 0px 0px;
   background-color: #f6f6f6;
@@ -1232,13 +1262,13 @@ body {
 }
 .se2--h1 {
   font-weight: 100;
-  font-size: 2.2em;
+  font-size: 1.5em;
   margin: 0% 5%;
   padding-top: 15px;
 }
 .se2--hb {
-  margin: 0% 5%;
-  width: 100px;
+  margin: 10px 5%;
+  width: 60px;
   border-top: 5px solid #99E2D0;
 }
 @media screen and (max-width: 990px) {

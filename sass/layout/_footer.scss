@@ -3,27 +3,44 @@ footer
     margin: 0%;
     padding: 10px 0px 10px 20px;
     color: white;
-    background-color: black;
-    font-size: 2em;
-    & i
-    {
-        padding-right: 2%;
-    }
+    background-color: rgb(53, 53, 53);
+    font-size: 1.2em;
+}
+
+.ii-1
+{
+    padding-right: 20px;
     @media screen and (min-width: 990px)
     {
-        padding:0%;
+        padding-right: 5px;
     }
 }
+
+.ii-2
+{
+    padding-right: 12px;
+    @media screen and (min-width: 990px)
+    {
+        padding-right: 5px;
+    }
+}
+
 
 .fo1
 {
     margin: 0%;
-    padding:20px 0px;
+    padding:10px 0px;
     @include font-1;
     @media screen and (min-width: 990px)
     {
         text-align: center;
     }
+}
+
+.fo5
+{
+    background-color: rgb(53, 53, 53);
+    color: white;
 }
 
 #fo
@@ -34,7 +51,7 @@ footer
 .fo
 {
     margin: 0%;
-    padding:10px 0px;
+    padding:3px 0px;
     @media screen and (min-width: 990px)
     {
         margin: 0%;
