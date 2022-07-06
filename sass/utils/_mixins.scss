@@ -50,6 +50,7 @@
     }
     &--2
     {
+        display: none;
         background:linear-gradient(to left, $color-2, $color-1);
         background-clip: text;
         -webkit-background-clip: text;
@@ -70,6 +71,7 @@
     &:active > &--2
     {
         @include heart
+        
     }
     @media screen and (min-width: 990px)
     {

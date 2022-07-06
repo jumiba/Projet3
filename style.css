@@ -196,6 +196,7 @@ button:hover {
   display: block;
 }
 .btn4--h--2 {
+  display: none;
   background: linear-gradient(to left, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
@@ -285,6 +286,7 @@ button:hover {
   display: block;
 }
 .btn5--h--2 {
+  display: none;
   background: linear-gradient(to left, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
