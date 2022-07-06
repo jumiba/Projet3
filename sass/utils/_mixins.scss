@@ -50,11 +50,10 @@
     }
     &--2
     {
-        display: none;
         background:linear-gradient(to left, $color-2, $color-1);
-        background-clip:linear-gradient(to left, $color-2, $color-1);
+        background-clip: text;
         -webkit-background-clip: text;
-        color:transparent;
+        color: transparent;
     }
     &:hover > &--1
     {
@@ -82,9 +81,9 @@
         {
             display: none;
             background:linear-gradient(to left, $color-2, $color-1);
-            background-clip:linear-gradient(to left, $color-2, $color-1);
+            background-clip: text;
             -webkit-background-clip: text;
-            color:transparent;
+            color: transparent;
         }
         &:hover > &--1
         {

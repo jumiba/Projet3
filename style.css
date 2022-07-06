@@ -196,9 +196,8 @@ button:hover {
   display: block;
 }
 .btn4--h--2 {
-  display: none;
   background: linear-gradient(to left, #FF79DA, #9356DC);
-  background-clip: linear-gradient(to left, #FF79DA, #9356DC);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -232,7 +231,7 @@ button:hover {
   .btn4--h--2 {
     display: none;
     background: linear-gradient(to left, #FF79DA, #9356DC);
-    background-clip: linear-gradient(to left, #FF79DA, #9356DC);
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
   }
@@ -286,9 +285,8 @@ button:hover {
   display: block;
 }
 .btn5--h--2 {
-  display: none;
   background: linear-gradient(to left, #FF79DA, #9356DC);
-  background-clip: linear-gradient(to left, #FF79DA, #9356DC);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -322,7 +320,7 @@ button:hover {
   .btn5--h--2 {
     display: none;
     background: linear-gradient(to left, #FF79DA, #9356DC);
-    background-clip: linear-gradient(to left, #FF79DA, #9356DC);
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
   }
